@@ -13,6 +13,11 @@ import Vue from 'vue'
 Vue.use(VueRouter);
 Vue.use(Vuetify);
 
+import Auth from './auth'
+Vue.prototype.$auth = new Auth(window.user);
+Vue.prototype.$thienan = 'Thien An';
+
+
 const router = new VueRouter({
     mode: 'history',
     routes: routes

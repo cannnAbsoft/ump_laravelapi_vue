@@ -1,21 +1,18 @@
-// import Admin from './components/Admin.vue';
-// import CreateComponent from './components/CreateComponent.vue';
-// import EditComponent from './components/EditComponent.vue';
+import Users from './pages/Users.vue';
+import Roles from './pages/Roles.vue';
+import Permissions from './pages/Permissions.vue';
 
 export const routes = [
-    // {
-    //     name: 'dashboard',
-    //     path: '/admin/',
-    //     component: Admin
-    // },
-    // {
-    //     name: 'create',
-    //     path: '/create',
-    //     component: CreateComponent
-    // },
-    // {
-    //     name: 'edit',
-    //     path: '/edit/:id',
-    //     component: EditComponent
-    // }
+    {
+        path: '/admin/users',
+        component: Users
+    },
+    {
+        path: '/admin/roles',
+        component: Roles
+    },
+    {
+        path: '/admin/permissions',
+        component: Permissions
+    },
 ];

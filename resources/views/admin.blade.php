@@ -18,11 +18,22 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
 </head>
 <body>
 <div id="app">
 
 <h3>Hello A Can</h3>
 </div>
+<script>
+    window.user = @json(
+        [
+            'user'=> auth()->user(),
+            'roles'=>auth()->user()->roles,
+            'permissions'=> auth()->user()->getAllPermissions()
+        ]
+        );
+
+</script>
 </body>
 </html>
